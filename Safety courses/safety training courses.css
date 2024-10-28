@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* About section styles */
+#about {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#about h2 {
+    color: #2E8B57;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    color: #333333;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+#about h3 {
+    color: #003B2D;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#about ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+#about ul li strong {
+    color: #2E8B57;
+}
+
+/* Additional styles for better readability */
+#about p:last-child {
+    margin-bottom: 0;
+}
+
+h2.dekra-heading {
+    font-family: 'Arial', sans-serif;
+    color: #2E8B57;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #D3D3D3;
+    margin-top: 20px;
+}
+
+.course-container {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center align contents */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 20px;
+}
+
+.course-box {
+    border: 1px solid #003B2D; /* DEKRA dark green */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px; /* Margin for spacing between boxes */
+    background-color: #ffffff;
+    width: 220px; /* Set width for boxes */
+    height: 250px; /* Adjusted height for better fit */
+    display: flex;
+    flex-direction: column; /* Stack image and title vertically */
+    align-items: center; /* Center contents vertically */
+    justify-content: center; /* Center contents horizontally */
+}
+
+.course-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+    width: 100%; /* Ensure image takes full width */
+    height: 80px; /* Set a fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+}
+
+.course-title {
+    color: #003B2D; /* DEKRA dark green */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #003B2D; /* DEKRA dark green */
+    color: #FFFFFF; /* White text */
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #A8D6A1; /* Light green */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF; /* Change color on hover */
+}
+
+.footer-accreditation {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.footer-contact {
+    margin-top: 20px;
+}
+
+.footer-speak-up {
+    margin-top: 25px;
+    font-style: italic;
+}

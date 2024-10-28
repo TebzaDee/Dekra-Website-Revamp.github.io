@@ -1,0 +1,178 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-image: url("one.jpg");
+    background-size: cover; /* Resize to cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    text-align: center;
+}
+
+h1{
+    font-size:50px;
+}
+
+.popover,.popover2,.popover3,.popover4,.popover5 {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-30%);
+    height:fit-content;
+    background-color: rgba(249, 249, 249, 0.9);
+    
+    border: 1px solid #013501;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.popover-hidden {
+    display: none;
+}
+
+.green-button {
+    background-color: rgba(46, 204, 113, 0.5);
+    color: #fff; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.green-button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+    color: #fff; /* Keep text white */
+}
+
+.green-button:hover .glyphicon {
+    color: #ffff00; /* Change icon color to yellow on hover */
+}
+
+.green-button .glyphicon {
+    color: #cccccc; /* Default icon color */
+    transition: color 0.3s; /* Smooth icon color transition */
+}
+
+.green-button:active {
+    background-color: #1a8d5f; /* Change background color on click */
+    color: #fff; /* Keep text white */
+}
+
+.green-button:active .glyphicon {
+    color: #ff69b4; /* Change icon color on click */
+}
+
+.clicked {
+    background-color: #1a8d5f; /* Changed background color */
+    color: #fff; /* Changed text color */
+}
+
+.clicked .glyphicon {
+    color: #ff69b4; /* Changed icon color */
+}
+
+
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(to right, white 50%, green 50%);
+    padding: 20px;
+    align-items: center;
+    height: 400px;
+}
+
+.grid-item.image img {
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+    height: 300px; /* Increased height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.grid-item.text {
+    padding: 20px;
+    color: #333;
+}
+
+footer {
+    background-color: #003B2D; /* DEKRA dark green */
+    color: #FFFFFF; /* White text */
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #A8D6A1; /* Light green */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF; /* Change color on hover */
+}
+
+.footer-accreditation {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.footer-contact {
+    margin-top: 20px;
+}
+
+.footer-speak-up {
+    margin-top: 25px;
+    font-style: italic;
+}
+img{
+  height: 400px;
+  width: 400px;
+}

@@ -1,0 +1,495 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(to right, #4CAF50 50%, #ffffff 50%);
+    padding: 20px;
+    align-items: center;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.grid-item.image img {
+    width: 100%;
+    max-width: 670px; /* Increased max-width for better visibility */
+    height: 180px;
+    object-fit: fill;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.grid-item.text {
+    padding: 20px;
+    color: #333;
+}
+
+.grid-item.text h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.grid-item.text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #1f2937;
+  color: #fff;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 40px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media(min-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+  }
+}
+
+.footer-section {
+  padding: 0 1rem;
+}
+
+/* Logo Section */
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-description {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.footer-description a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.footer-description a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.footer-heading {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 2.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.contact-info i {
+  margin-right: 0.5rem;
+}
+
+.contact-info a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+/* Social Media Links */
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #2563eb;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+  background-color: #1e40af;
+}
+
+.social-links a.youtube {
+  background-color: #dc2626;
+}
+
+.social-links a.youtube:hover {
+  background-color: #991b1b;
+}
+
+/* Copyright Section */
+.footer-bottom {
+  background-color: #111827;
+  padding: 1rem;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+/* Scroll and Help Buttons */
+.fixed-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fixed-buttons a {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s;
+}
+
+.fixed-buttons a:hover {
+  background-color: #388e3c;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #4caf50;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -40px auto 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: #4caf50;
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Main Message Section Styles */
+.main-message {
+  background-color: #f4f4f4; /* Light gray background for contrast */
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-message .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-message .main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333333; /* Dark gray text for good readability */
+  margin-bottom: 1rem;
+}
+
+.main-message .main-tagline {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #0073aa; /* Blue accent color */
+  margin-bottom: 1.5rem;
+}
+
+.main-message .main-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555555; /* Medium gray text color */
+  margin-bottom: 1.5rem;
+}
+
+.main-message .main-description strong {
+  color: #0073aa; /* Blue color for emphasized text */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .main-message {
+    padding: 4rem 2rem;
+  }
+  .main-message .main-title {
+    font-size: 2.5rem;
+  }
+  .main-message .main-tagline {
+    font-size: 1.5rem;
+  }
+  .main-message .main-description {
+    font-size: 1.125rem;
+  }
+}
+
+/* Accreditation Section Styles */
+.accreditation {
+  background-color: #f4f4f4;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.accreditation .accreditation-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.accreditation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noscara {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.noscara-title {
+  font-size: 1.2rem;
+  color: #0073aa;
+  margin-bottom: 0.5rem;
+}
+
+.noscara-name {
+  font-size: 2.5rem;
+  color: #c39a48; /* Gold color */
+  font-weight: 700;
+}
+
+.noscara-stars {
+  font-size: 1.5rem;
+  color: #c39a48;
+  margin: 0.5rem 0;
+}
+
+.noscara-award {
+  font-size: 1rem;
+  color: #0073aa;
+  font-weight: 500;
+}
+
+/* Accreditation Cards */
+.accreditation-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.accreditation-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.accreditation-card:hover {
+  transform: translateY(-5px);
+}
+
+.accreditation-card img {
+  max-width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.accreditation-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.accreditation-details {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.accreditation-view {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #0073aa;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.accreditation-view:hover {
+  color: #005a87;
+}
