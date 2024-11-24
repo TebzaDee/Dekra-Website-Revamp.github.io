@@ -443,53 +443,290 @@ body {
 /* Accreditation Cards */
 .accreditation-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Increased min-width for cards */
+  gap: 1.5rem; /* Increased gap between cards */
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px; /* Increased max-width for the container */
 }
 
 .accreditation-card {
   background-color: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem; /* Increased padding for larger cards */
+  border-radius: 10px; /* Slightly bigger border-radius */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow for more depth */
   text-align: center;
   transition: transform 0.3s ease;
 }
 
 .accreditation-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px); /* Slightly larger hover effect */
 }
 
 .accreditation-card img {
-  max-width: 80px;
-  margin-bottom: 0.5rem;
+  max-width: 100px; /* Increased image size */
+  margin-bottom: 1rem; /* More space below the image */
 }
 
 .accreditation-name {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.25rem; /* Larger font size for name */
+  font-weight: 700; /* Increased font weight */
   color: #333;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem; /* More space below the name */
 }
 
 .accreditation-details {
-  font-size: 0.875rem;
+  font-size: 1rem; /* Larger font size for details */
   color: #555;
 }
 
 .accreditation-view {
   display: inline-block;
-  margin-top: 0.5rem;
-  font-size: 0.875rem;
+  margin-top: 1rem; /* More space above the view link */
+  font-size: 1rem; /* Larger font size for the view text */
   color: #0073aa;
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: 700; /* Increased font weight */
   cursor: pointer;
   transition: color 0.3s;
 }
 
 .accreditation-view:hover {
-  color: #005a87;
+  color: #005a87; /* Darker hover color */
+}
+
+/* Container */
+.dekra-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.dekra-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width */
+}
+
+.dekra-header {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #6fbf73, #4caf50);
+  color: white;
+  width: 100%; /* Full width */
+}
+
+.dekra-logo {
+  width: 120px; /* Larger logo */
+  margin-right: 30px;
+}
+
+.dekra-title {
+  margin: 0;
+  font-size: 3.5em; /* Larger title */
+}
+
+.dekra-content {
+  padding: 50px;
+  width: 100%; /* Ensure content takes full width */
+}
+
+.dekra-subtitle {
+  color: #4caf50;
+  font-size: 2.5em; /* Larger subtitle */
+  margin-bottom: 20px;
+}
+
+.dekra-description {
+  line-height: 1.8;
+  color: #555555;
+  font-size: 1.4em; /* Larger text for description */
+}
+
+.dekra-description strong {
+  color: #4caf50;
+}
+
+.dekra-cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.dekra-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 20px 40px; /* Bigger button */
+  font-size: 1.5em; /* Larger text for button */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dekra-button:hover {
+  background-color: #388e3c;
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #009639; /* DEKRA Green */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 4px solid #006c2b; /* Slightly darker DEKRA green */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.header img {
+  max-width: 180px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.header img:hover {
+  transform: scale(1.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Content Section */
+.content {
+  background-color: white;
+  padding: 40px;
+  max-width: 850px;
+  margin: 30px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideIn 1s forwards;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.content p:hover {
+  color: #009639; /* DEKRA Green */
+}
+
+.content strong {
+  font-weight: bold;
+  color: #009639; /* DEKRA Green */
+  transition: color 0.3s ease-in-out;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta button {
+  background-color: #009639; /* DEKRA Green */
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta button:hover {
+  background-color: #006c2b; /* Darker DEKRA Green */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content h2 {
+    font-size: 1.75rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .cta button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
 }
