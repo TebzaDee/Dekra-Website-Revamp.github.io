@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Styled Table Example</title>
     <style>
         /* Style the table */
@@ -22,7 +25,7 @@
             font-weight: bold;
         }
         th, td {
-        
+
         border-radius: 10px;
         }
 
@@ -49,14 +52,78 @@
     </style>
 </head>
 <body>
-    
+  <!-- Header Section -->
+  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .gradient-bg {
+        background: linear-gradient(90deg, #1abc9c, #2ecc71);
+    }
+    .nav-item:hover {
+        color: #1abc9c;
+    }
+
+    </style>
+    <body class="font-sans">
+      <!-- Top Bar -->
+      <div class="bg-gray-900 text-gray-200 text-sm py-2">
+          <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+              <span class="mr-4">📞 (+27) 087 095 2725</span>
+              <span class="mr-4">DEKRA INSTITUTE OF LEARNING</span>
+              <span><i class="fas fa-envelope mr-2"></i>info@dekrainstitute.co.za</span>
+            </div>
+
+            <div class="space-x-4">
+                  <a href="https://www.youtube.com/@dekraiolsa" class="hover:text-teal-400">Youtube</a>
+                  <a href="https://web.facebook.com/DekraInstitute?_rdc=1&_rdr#" class="hover:text-teal-400">Facebook</a>
+                  <a href="https://www.linkedin.com/company/dekra-institute-of-learning/" class="hover:text-teal-400">LinkedIn</a>
+                  <a href="https://x.com/dekraiol" class="hover:text-teal-400">Twitter</a>
+              </div>
+          </div>
+      </div>
+      <!-- Main Navigation -->
+      <header class="bg-white shadow-md">
+          <div class="container mx-auto flex justify-between items-center py-4 px-4">
+
+              <div class="flex items-center space-x-2">
+
+            <a href="https://dekraiol.co.za/">
+              <div class="w-16 h-16 bg-teal-400 rounded-full" style="background-image: url('DEKRA LOGO.jpeg'); background-size: cover; background-position: center;"></div>
+            </a>
+            <span class="text-xl font-bold text-gray-700">DEKRA <span class="text-gray-400">INSTITUTE OF LEARNING</span></span>
+            <span class="text-xl font-bold text-gray-700"> <span class="text-gray-400"></span></span>
+          </div>
+
+          <nav class="hidden md:flex space-x-8">
+            <a href="Home.html" class="nav-item text-gray-600 hover:text-teal-400">Home</a>
+            <a href="C:\Users\IC\OneDrive\Desktop\Website\Website\About us.html" class="nav-item text-gray-600 hover:text-teal-400">About Us</a>
+            <a href="Accredited Skills Courses.html" class="nav-item text-gray-600 hover:text-teal-400">Courses</a>
+            <a href="safety training courses.html" class="nav-item text-gray-600 hover:text-teal-400">Accredited Courses</a>
+            <a href="WhatWEOffer.html" class="nav-item text-gray-600 hover:text-teal-400">What We Offer</a>
+            <a href="news.html" class="nav-item text-gray-600 hover:text-teal-400 relative">
+                News
+                <span class="absolute top-0 right-[-8px] bg-red-500 text-white text-xs rounded-full w-3 h-3 flex items-center justify-center">•</span>
+            </a>
+            <a href="index.html" class="nav-item text-gray-600 hover:text-teal-400">Contact Us</a>
+          </nav>
+
+            <!-- Right Section -->
+            <div class="flex items-center space-x-4 ml-4"> <!-- Added ml-4 here for space before the button -->
+              <a href="https://learning.dekrainstitute.co.za/login/index.php">
+                <button class="gradient-bg text-white px-4 py-2 rounded-lg shadow-lg hover:opacity-90">
+                  Learning Portal
+                </button>
+              </a>
+            </div>
+      </header>
+
     <h3>Work Information</h3>
     <table>
-      
+
         <tr>
             <th colspan="5" class="centered-header">Occupational Health $Safety - Machine / Equipment Operator Courses</th>
         </tr>
-       
+
         <tr>
             <th>Course Title</th>
             <th>Credits</th>
